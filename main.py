@@ -4,7 +4,6 @@ import json
 import os
 
 intents = discord.Intents.default()
-intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 DATA_FILE = 'players.json'
@@ -72,4 +71,4 @@ async def ascend(ctx):
 
     await ctx.send(f"🚀 {ctx.author.display_name} has ascended to **Floor {player['floor']}**!")
 
-bot.run(os.getenv("TOKEN"))
+bot.run("1389644450443034675")
