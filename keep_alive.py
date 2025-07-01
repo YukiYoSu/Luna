@@ -1,4 +1,5 @@
-from keep_alive import keep_alive
+
+from flask import Flask
 from threading import Thread
 
 app = Flask(__name__)
