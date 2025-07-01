@@ -3,7 +3,9 @@ from discord.ext import commands
 import json
 import os
 
+# Enable required intents
 intents = discord.Intents.default()
+intents.message_content = True  # REQUIRED for prefix commands like !floor
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 DATA_FILE = 'players.json'
@@ -30,14 +32,14 @@ def get_player_data(user_id):
 
 @bot.event
 async def on_ready():
-    print(f'Logged in as {bot.user.name}')
-    
-    # Replace YOUR_USER_ID with your actual Discord user ID
-    owner = await bot.fetch_user(1351629934984040549)
+    print(f'✅ Logged in as {bot.user.name}')
+
     try:
+        # Replace with your actual Discord user ID
+        owner = await bot.fetch_user(1351629934984040549)
         await owner.send("✅ Your SAO Floor Bot is now online and ready!")
     except Exception as e:
-        print(f"Couldn't DM you: {e}")
+        print(f"❌ Couldn't DM you: {e}")
 
 @bot.command()
 async def floor(ctx):
@@ -78,4 +80,7 @@ async def ascend(ctx):
 
     await ctx.send(f"🚀 {ctx.author.display_name} has ascended to **Floor {player['floor']}**!")
 
+# Run the bot with a token from environment or directly for testing
 bot.run(os.getenv('DISCORD_BOT_TOKEN'))
+# Or use this temporarily if testing locally:
+# bot.run("YOUR_BOT_TOKEN_HERE")
