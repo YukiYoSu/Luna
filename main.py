@@ -71,4 +71,4 @@ async def ascend(ctx):
 
     await ctx.send(f"🚀 {ctx.author.display_name} has ascended to **Floor {player['floor']}**!")
 
-bot.run("1389644450443034675")
+bot.run(os.getenv('DISCORD_BOT_TOKEN'))
