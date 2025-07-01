@@ -313,6 +313,8 @@ async def inventory(ctx):
         embed.add_field(name=item, value=f"Quantity: {qty}", inline=True)
     await ctx.send(embed=embed)
 
+bot.remove_command('help')
+
 @bot.command(name='help')
 async def help_command(ctx):
     embed = discord.Embed(
