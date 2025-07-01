@@ -1,14 +1,28 @@
 {
   "1351629934984040549": {
-    "floor": 1,
+    "floor": 3,
     "boss_defeated": false,
-    "level": 1,
+    "level": 2,
     "exp": 0,
     "hp": 100,
     "atk": 10,
     "def": 5,
-    "inventory": [
-      "Excalibur"
-    ]
-  }
+    "inventory": {
+      "Orc Tusk": 2,
+      "Orc Tooth": 3,
+      "Spider Silk": 1,
+      "Magic Dust": 1
+    },
+    "stats": {
+      "Strength": 9,
+      "Agility": 5,
+      "Intelligence": 2
+    },
+    "skills": {
+      "powerstrike": 1751400772.9701998
+    },
+    "xp": 12,
+    "party": null
+  },
+  "parties": {}
 }
