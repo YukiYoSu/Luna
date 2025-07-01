@@ -1,1 +1,14 @@
-{}
+{
+  "1351629934984040549": {
+    "floor": 1,
+    "boss_defeated": false,
+    "level": 1,
+    "exp": 0,
+    "hp": 100,
+    "atk": 10,
+    "def": 5,
+    "inventory": [
+      "Excalibur"
+    ]
+  }
+}
