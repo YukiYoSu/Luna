@@ -6,6 +6,8 @@ import os
 # Enable required intents
 intents = discord.Intents.default()
 intents.message_content = True  # REQUIRED for prefix commands like !floor
+intents.members = True  # For member-related events (privileged)
+intents.presences = True  # For presence updates (privileged)
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 DATA_FILE = 'players.json'
