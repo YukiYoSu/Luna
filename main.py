@@ -31,6 +31,13 @@ def get_player_data(user_id):
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
+    
+    # Replace YOUR_USER_ID with your actual Discord user ID
+    owner = await bot.fetch_user(1351629934984040549)
+    try:
+        await owner.send("✅ Your SAO Floor Bot is now online and ready!")
+    except Exception as e:
+        print(f"Couldn't DM you: {e}")
 
 @bot.command()
 async def floor(ctx):
