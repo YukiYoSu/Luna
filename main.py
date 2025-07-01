@@ -71,4 +71,4 @@ async def ascend(ctx):
 keep_alive()
 
 # --- Run the bot ---
-bot.run("PASTE_YOUR_DISCORD_BOT_TOKEN_HERE")
+bot.run(os.getenv('DISCORD_TOKEN'))
