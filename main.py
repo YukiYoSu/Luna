@@ -551,18 +551,18 @@ class SAOMenuView(View):
 
         if self.current_page == 'main':
             embed = discord.Embed(
-                title="SAO Menu",
+                title="<:SAO_Char:1390070933389054042><:SAO_group:1390070956315381892><:SAO_chat:1390070980038234153><:SAO_map:1390071009691963392><:SAO_settings:1390071032399794236>SAO Menu",
                 description="Welcome to your in-game menu. Choose an option below.",
                 color=0x00ffcc,
             )
-            embed.add_field(name="Floor", value=str(player['floor']), inline=True)
-            embed.add_field(name="Level", value=str(player['level']), inline=True)
-            embed.add_field(name="XP", value=str(player['xp']), inline=True)
+            embed.add_field(name="<:SAO_map:1390071009691963392>Floor", value=str(player['floor']), inline=True)
+            embed.add_field(name="<:SAO_Char:1390070933389054042>Level", value=str(player['level']), inline=True)
+            embed.add_field(name="<:SAO_Char:1390070933389054042>XP", value=str(player['xp']), inline=True)
             embed.set_footer(text="Use the buttons below to navigate")
             return embed
 
         elif self.current_page == 'stats':
-            embed = discord.Embed(title=f"Stats for {self.user_id}", color=0x00ffcc)
+            embed = discord.Embed(title=f"Stats for {self.user_name}", color=0x00ffcc)
             for stat, val in player['stats'].items():
                 embed.add_field(name=stat, value=str(val), inline=True)
             embed.add_field(name="Level", value=player.get("level", 1), inline=True)
