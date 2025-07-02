@@ -635,6 +635,24 @@ class SAOMenuView(View):
         else:
             await interaction.response.send_message("You are already at the lowest floor!", ephemeral=True)
 
+PLAYERS = {}  # your global player data store
+
+def get_player(user_id):
+    # fetch player or create default if not found
+    if user_id not in PLAYERS:
+        PLAYERS[user_id] = {
+            "floor": 1,
+            "level": 1,
+            "xp": 0,
+            "stats": {"Strength": 1, "Agility": 1, "Intelligence": 1},
+            "inventory": {},
+            "boss_defeated": False,
+        }
+    return PLAYERS[user_id]
+
+def save_player(user_id, player_data):
+    PLAYERS[user_id] = player_data
+
 
 @bot.command()
 async def menu(ctx):
