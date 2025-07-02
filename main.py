@@ -613,47 +613,6 @@ class SAOMenuView(View):
         self.current_page = 'progression'
         await interaction.response.edit_message(embed=self.get_embed(), view=self)
 
-    # New buttons for floor navigation
-
-    @button(label="Floor Up", style=discord.ButtonStyle.success)
-    async def floor_up_button(self, interaction: discord.Interaction, button):
-        player = get_player(self.user_id)
-        if player['floor'] < 50:  # max floor limit
-            player['floor'] += 1
-            save_player(self.user_id, player)  # You need to implement this to persist data
-            await interaction.response.edit_message(embed=self.get_embed(), view=self)
-        else:
-            await interaction.response.send_message("You are already at the highest floor!", ephemeral=True)
-
-    @button(label="Floor Down", style=discord.ButtonStyle.danger)
-    async def floor_down_button(self, interaction: discord.Interaction, button):
-        player = get_player(self.user_id)
-        if player['floor'] > 1:  # min floor limit
-            player['floor'] -= 1
-            save_player(self.user_id, player)  # Persist changes
-            await interaction.response.edit_message(embed=self.get_embed(), view=self)
-        else:
-            await interaction.response.send_message("You are already at the lowest floor!", ephemeral=True)
-
-PLAYERS = {}  # your global player data store
-
-def get_player(user_id):
-    # fetch player or create default if not found
-    if user_id not in PLAYERS:
-        PLAYERS[user_id] = {
-            "floor": 1,
-            "level": 1,
-            "xp": 0,
-            "stats": {"Strength": 1, "Agility": 1, "Intelligence": 1},
-            "inventory": {},
-            "boss_defeated": False,
-        }
-    return PLAYERS[user_id]
-
-def save_player(user_id, player_data):
-    PLAYERS[user_id] = player_data
-
-
 @bot.command()
 async def menu(ctx):
     view = SAOMenuView(ctx.author.id)
