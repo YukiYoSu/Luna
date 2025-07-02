@@ -506,6 +506,7 @@ async def inventory(ctx):
 
 bot.remove_command('help')
 
+# ==== HELP COMMAND ====
 @bot.command(name='help')
 async def help_command(ctx):
     embed = discord.Embed(
