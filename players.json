@@ -8,20 +8,16 @@
     "atk": 10,
     "def": 5,
     "inventory": {
-      "Orc Tusk": 2,
-      "Orc Tooth": 3,
-      "Spider Silk": 1,
-      "Magic Dust": 1
     },
     "stats": {
-      "Strength": 9,
-      "Agility": 5,
-      "Intelligence": 2
+      "Strength": 1,
+      "Agility": 1,
+      "Intelligence": 1
     },
     "skills": {
       "powerstrike": 1751400772.9701998
     },
-    "xp": 12,
+    "xp": 0,
     "party": null
   },
   "parties": {}
