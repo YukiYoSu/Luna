@@ -1,12 +1,12 @@
 {
   "1351629934984040549": {
-    "floor": 3,
+    "floor": 1,
     "boss_defeated": false,
-    "level": 2,
+    "level": 1,
     "exp": 0,
     "hp": 100,
-    "atk": 10,
-    "def": 5,
+    "atk": 1,
+    "def": 1,
     "inventory": {
     },
     "stats": {
