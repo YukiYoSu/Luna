@@ -524,6 +524,7 @@ async def help_command(ctx):
     embed.add_field(name="!boss", value="Attempt to fight the floor boss if you meet the stat requirements.", inline=False)
     embed.add_field(name="!floorup", value="Advance to the next floor if you defeated the current floor’s boss.", inline=False)
     embed.add_field(name="!inventory", value="Show your current inventory items and their quantities.", inline=False)
+    embed.add_field(name="!menu", value="Show the general menu.", inline=False)
     embed.add_field(name="!help", value="Show this help message.", inline=False)
 
     await ctx.send(embed=embed)
