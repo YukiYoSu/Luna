@@ -613,6 +613,29 @@ class SAOMenuView(View):
         self.current_page = 'progression'
         await interaction.response.edit_message(embed=self.get_embed(), view=self)
 
+    # New buttons for floor navigation
+
+    @button(label="Floor Up", style=discord.ButtonStyle.success)
+    async def floor_up_button(self, interaction: discord.Interaction, button):
+        player = get_player(self.user_id)
+        if player['floor'] < 50:  # max floor limit
+            player['floor'] += 1
+            save_player(self.user_id, player)  # You need to implement this to persist data
+            await interaction.response.edit_message(embed=self.get_embed(), view=self)
+        else:
+            await interaction.response.send_message("You are already at the highest floor!", ephemeral=True)
+
+    @button(label="Floor Down", style=discord.ButtonStyle.danger)
+    async def floor_down_button(self, interaction: discord.Interaction, button):
+        player = get_player(self.user_id)
+        if player['floor'] > 1:  # min floor limit
+            player['floor'] -= 1
+            save_player(self.user_id, player)  # Persist changes
+            await interaction.response.edit_message(embed=self.get_embed(), view=self)
+        else:
+            await interaction.response.send_message("You are already at the lowest floor!", ephemeral=True)
+
+
 @bot.command()
 async def menu(ctx):
     view = SAOMenuView(ctx.author.id)
