@@ -22,7 +22,198 @@ MOBS = {
         {"name": "Orc", "stat_reward": {"Strength": 2, "Agility": 1, "Intelligence": 0}, "drops": ["Orc Tooth"]},
         {"name": "Orc Shaman", "stat_reward": {"Strength": 1, "Agility": 0, "Intelligence": 1}, "drops": ["Magic Dust"]},
     ],
-    # Add more floors and mobs here...
+    3: [
+        {"name": "Skeleton Warrior", "stat_reward": {"Strength": 2, "Agility": 0, "Intelligence": 0}, "drops": ["Bone Fragment"]},
+        {"name": "Skeleton Archer", "stat_reward": {"Strength": 1, "Agility": 2, "Intelligence": 0}, "drops": ["Rusty Arrow"]},
+    ],
+    4: [
+        {"name": "Bandit", "stat_reward": {"Strength": 3, "Agility": 1, "Intelligence": 0}, "drops": ["Bandit Dagger"]},
+        {"name": "Bandit Mage", "stat_reward": {"Strength": 1, "Agility": 0, "Intelligence": 2}, "drops": ["Fire Essence"]},
+    ],
+    5: [
+        {"name": "Wolf", "stat_reward": {"Strength": 3, "Agility": 2, "Intelligence": 0}, "drops": ["Wolf Pelt"]},
+        {"name": "Dire Wolf", "stat_reward": {"Strength": 4, "Agility": 3, "Intelligence": 0}, "drops": ["Dire Fang"]},
+    ],
+    6: [
+        {"name": "Goblin Berserker", "stat_reward": {"Strength": 4, "Agility": 1, "Intelligence": 0}, "drops": ["Berserker Axe"]},
+        {"name": "Goblin Shaman", "stat_reward": {"Strength": 1, "Agility": 0, "Intelligence": 3}, "drops": ["Shaman Staff"]},
+    ],
+    7: [
+        {"name": "Troll", "stat_reward": {"Strength": 5, "Agility": 1, "Intelligence": 0}, "drops": ["Troll Hide"]},
+        {"name": "Troll Shaman", "stat_reward": {"Strength": 2, "Agility": 0, "Intelligence": 3}, "drops": ["Mystic Totem"]},
+    ],
+    8: [
+        {"name": "Harpy", "stat_reward": {"Strength": 3, "Agility": 4, "Intelligence": 0}, "drops": ["Feather"]},
+        {"name": "Harpy Mage", "stat_reward": {"Strength": 2, "Agility": 2, "Intelligence": 2}, "drops": ["Wind Crystal"]},
+    ],
+    9: [
+        {"name": "Dark Knight", "stat_reward": {"Strength": 6, "Agility": 1, "Intelligence": 1}, "drops": ["Dark Sword"]},
+        {"name": "Dark Mage", "stat_reward": {"Strength": 2, "Agility": 1, "Intelligence": 5}, "drops": ["Dark Orb"]},
+    ],
+    10: [
+        {"name": "Ogre", "stat_reward": {"Strength": 7, "Agility": 1, "Intelligence": 0}, "drops": ["Ogre Club"]},
+        {"name": "Ogre Shaman", "stat_reward": {"Strength": 3, "Agility": 0, "Intelligence": 4}, "drops": ["Ogre Totem"]},
+    ],
+    11: [
+        {"name": "Stone Golem", "stat_reward": {"Strength": 8, "Agility": 0, "Intelligence": 0}, "drops": ["Golem Core"]},
+        {"name": "Earth Elemental", "stat_reward": {"Strength": 6, "Agility": 1, "Intelligence": 2}, "drops": ["Earth Shard"]},
+    ],
+    12: [
+        {"name": "Bandit Captain", "stat_reward": {"Strength": 7, "Agility": 3, "Intelligence": 0}, "drops": ["Captain's Sword"]},
+        {"name": "Bandit Sorcerer", "stat_reward": {"Strength": 3, "Agility": 1, "Intelligence": 5}, "drops": ["Sorcerer’s Scroll"]},
+    ],
+    13: [
+        {"name": "Wyvern", "stat_reward": {"Strength": 8, "Agility": 5, "Intelligence": 0}, "drops": ["Wyvern Scale"]},
+        {"name": "Wyvern Mage", "stat_reward": {"Strength": 5, "Agility": 3, "Intelligence": 4}, "drops": ["Wyvern Claw"]},
+    ],
+    14: [
+        {"name": "Vampire", "stat_reward": {"Strength": 7, "Agility": 3, "Intelligence": 2}, "drops": ["Vampire Fang"]},
+        {"name": "Vampire Lord", "stat_reward": {"Strength": 10, "Agility": 4, "Intelligence": 6}, "drops": ["Lord's Cloak"]},
+    ],
+    15: [
+        {"name": "Lich", "stat_reward": {"Strength": 4, "Agility": 1, "Intelligence": 9}, "drops": ["Lich Phylactery"]},
+        {"name": "Death Knight", "stat_reward": {"Strength": 11, "Agility": 3, "Intelligence": 3}, "drops": ["Death Blade"]},
+    ],
+    16: [
+        {"name": "Fire Elemental", "stat_reward": {"Strength": 6, "Agility": 4, "Intelligence": 5}, "drops": ["Flame Core"]},
+        {"name": "Fire Dragon Whelp", "stat_reward": {"Strength": 10, "Agility": 6, "Intelligence": 4}, "drops": ["Dragon Scale"]},
+    ],
+    17: [
+        {"name": "Ice Elemental", "stat_reward": {"Strength": 5, "Agility": 3, "Intelligence": 7}, "drops": ["Frost Shard"]},
+        {"name": "Ice Dragon Whelp", "stat_reward": {"Strength": 9, "Agility": 5, "Intelligence": 6}, "drops": ["Dragon Fang"]},
+    ],
+    18: [
+        {"name": "Shadow Assassin", "stat_reward": {"Strength": 8, "Agility": 8, "Intelligence": 3}, "drops": ["Shadow Dagger"]},
+        {"name": "Shadow Mage", "stat_reward": {"Strength": 4, "Agility": 4, "Intelligence": 8}, "drops": ["Shadow Orb"]},
+    ],
+    19: [
+        {"name": "Demon Imp", "stat_reward": {"Strength": 6, "Agility": 4, "Intelligence": 5}, "drops": ["Imp Claw"]},
+        {"name": "Demon Brute", "stat_reward": {"Strength": 12, "Agility": 3, "Intelligence": 2}, "drops": ["Demon Horn"]},
+    ],
+    20: [
+        {"name": "Hydra Head", "stat_reward": {"Strength": 13, "Agility": 2, "Intelligence": 3}, "drops": ["Hydra Scale"]},
+        {"name": "Hydra Tail", "stat_reward": {"Strength": 14, "Agility": 3, "Intelligence": 2}, "drops": ["Hydra Fang"]},
+    ],
+    21: [
+        {"name": "Giant Spider", "stat_reward": {"Strength": 8, "Agility": 7, "Intelligence": 1}, "drops": ["Spider Silk"]},
+        {"name": "Spider Queen", "stat_reward": {"Strength": 15, "Agility": 8, "Intelligence": 5}, "drops": ["Queen’s Fang"]},
+    ],
+    22: [
+        {"name": "Dark Sorcerer", "stat_reward": {"Strength": 6, "Agility": 3, "Intelligence": 12}, "drops": ["Dark Tome"]},
+        {"name": "Necromancer", "stat_reward": {"Strength": 7, "Agility": 2, "Intelligence": 14}, "drops": ["Necro Bone"]},
+    ],
+    23: [
+        {"name": "Minotaur", "stat_reward": {"Strength": 14, "Agility": 4, "Intelligence": 1}, "drops": ["Minotaur Horn"]},
+        {"name": "Minotaur Warrior", "stat_reward": {"Strength": 15, "Agility": 5, "Intelligence": 2}, "drops": ["Minotaur Axe"]},
+    ],
+    24: [
+        {"name": "Gorgon", "stat_reward": {"Strength": 12, "Agility": 5, "Intelligence": 5}, "drops": ["Gorgon Scale"]},
+        {"name": "Medusa", "stat_reward": {"Strength": 13, "Agility": 6, "Intelligence": 7}, "drops": ["Medusa Hair"]},
+    ],
+    25: [
+        {"name": "Phoenix", "stat_reward": {"Strength": 16, "Agility": 8, "Intelligence": 8}, "drops": ["Phoenix Feather"]},
+        {"name": "Flame Spirit", "stat_reward": {"Strength": 14, "Agility": 7, "Intelligence": 6}, "drops": ["Spirit Ash"]},
+    ],
+    26: [
+        {"name": "Kraken Tentacle", "stat_reward": {"Strength": 18, "Agility": 4, "Intelligence": 3}, "drops": ["Kraken Ink"]},
+        {"name": "Kraken Eye", "stat_reward": {"Strength": 16, "Agility": 5, "Intelligence": 5}, "drops": ["Kraken Eye"]},
+    ],
+    27: [
+        {"name": "Cyclops", "stat_reward": {"Strength": 20, "Agility": 3, "Intelligence": 2}, "drops": ["Cyclops Eye"]},
+        {"name": "Cyclops Warrior", "stat_reward": {"Strength": 22, "Agility": 4, "Intelligence": 1}, "drops": ["Cyclops Club"]},
+    ],
+    28: [
+        {"name": "Elemental Lord", "stat_reward": {"Strength": 17, "Agility": 7, "Intelligence": 10}, "drops": ["Elemental Core"]},
+        {"name": "Elemental Mage", "stat_reward": {"Strength": 15, "Agility": 5, "Intelligence": 12}, "drops": ["Elemental Staff"]},
+    ],
+    29: [
+        {"name": "Dread Knight", "stat_reward": {"Strength": 21, "Agility": 5, "Intelligence": 6}, "drops": ["Dread Sword"]},
+        {"name": "Dread Sorcerer", "stat_reward": {"Strength": 18, "Agility": 6, "Intelligence": 12}, "drops": ["Dread Orb"]},
+    ],
+    30: [
+        {"name": "Ancient Dragon Whelp", "stat_reward": {"Strength": 25, "Agility": 10, "Intelligence": 10}, "drops": ["Dragon Heart"]},
+        {"name": "Ancient Dragon Mage", "stat_reward": {"Strength": 20, "Agility": 8, "Intelligence": 15}, "drops": ["Dragon Crystal"]},
+    ],
+    31: [
+        {"name": "Shadow Wraith", "stat_reward": {"Strength": 19, "Agility": 14, "Intelligence": 8}, "drops": ["Wraith Essence"]},
+        {"name": "Shadow Phantom", "stat_reward": {"Strength": 22, "Agility": 15, "Intelligence": 10}, "drops": ["Phantom Shard"]},
+    ],
+    32: [
+        {"name": "Demon Lord's Guard", "stat_reward": {"Strength": 23, "Agility": 10, "Intelligence": 9}, "drops": ["Demon Guard Blade"]},
+        {"name": "Demon Lord's Mage", "stat_reward": {"Strength": 20, "Agility": 9, "Intelligence": 14}, "drops": ["Demon Staff"]},
+    ],
+    33: [
+        {"name": "Titan", "stat_reward": {"Strength": 28, "Agility": 5, "Intelligence": 5}, "drops": ["Titan’s Core"]},
+        {"name": "Titan Warrior", "stat_reward": {"Strength": 30, "Agility": 6, "Intelligence": 3}, "drops": ["Titan Axe"]},
+    ],
+    34: [
+        {"name": "Spirit Guardian", "stat_reward": {"Strength": 22, "Agility": 15, "Intelligence": 14}, "drops": ["Guardian Amulet"]},
+        {"name": "Spirit Mage", "stat_reward": {"Strength": 18, "Agility": 12, "Intelligence": 18}, "drops": ["Spirit Wand"]},
+    ],
+    35: [
+        {"name": "Hellhound", "stat_reward": {"Strength": 24, "Agility": 14, "Intelligence": 4}, "drops": ["Hellhound Fang"]},
+        {"name": "Hellhound Alpha", "stat_reward": {"Strength": 26, "Agility": 16, "Intelligence": 5}, "drops": ["Alpha Fang"]},
+    ],
+    36: [
+        {"name": "Frost Giant", "stat_reward": {"Strength": 27, "Agility": 7, "Intelligence": 7}, "drops": ["Frost Core"]},
+        {"name": "Frost Giant Warrior", "stat_reward": {"Strength": 29, "Agility": 8, "Intelligence": 6}, "drops": ["Frost Axe"]},
+    ],
+    37: [
+        {"name": "Arcane Sentinel", "stat_reward": {"Strength": 20, "Agility": 13, "Intelligence": 22}, "drops": ["Arcane Crystal"]},
+        {"name": "Arcane Mage", "stat_reward": {"Strength": 18, "Agility": 12, "Intelligence": 25}, "drops": ["Arcane Staff"]},
+    ],
+    38: [
+        {"name": "Necrotic Horror", "stat_reward": {"Strength": 25, "Agility": 10, "Intelligence": 20}, "drops": ["Necrotic Essence"]},
+        {"name": "Necrotic Lord", "stat_reward": {"Strength": 28, "Agility": 11, "Intelligence": 24}, "drops": ["Lord's Phylactery"]},
+    ],
+    39: [
+        {"name": "Celestial Knight", "stat_reward": {"Strength": 30, "Agility": 15, "Intelligence": 15}, "drops": ["Celestial Blade"]},
+        {"name": "Celestial Mage", "stat_reward": {"Strength": 25, "Agility": 12, "Intelligence": 22}, "drops": ["Celestial Orb"]},
+    ],
+    40: [
+        {"name": "Elder Dragon", "stat_reward": {"Strength": 35, "Agility": 20, "Intelligence": 18}, "drops": ["Elder Dragon Scale"]},
+        {"name": "Elder Dragon Mage", "stat_reward": {"Strength": 30, "Agility": 18, "Intelligence": 25}, "drops": ["Elder Dragon Heart"]},
+    ],
+    41: [
+        {"name": "Void Reaper", "stat_reward": {"Strength": 32, "Agility": 20, "Intelligence": 22}, "drops": ["Reaper Scythe"]},
+        {"name": "Void Sorcerer", "stat_reward": {"Strength": 28, "Agility": 17, "Intelligence": 28}, "drops": ["Void Crystal"]},
+    ],
+    42: [
+        {"name": "Storm Giant", "stat_reward": {"Strength": 33, "Agility": 15, "Intelligence": 20}, "drops": ["Storm Core"]},
+        {"name": "Storm Giant Shaman", "stat_reward": {"Strength": 30, "Agility": 14, "Intelligence": 25}, "drops": ["Storm Staff"]},
+    ],
+    43: [
+        {"name": "Phantom Wraith", "stat_reward": {"Strength": 29, "Agility": 25, "Intelligence": 22}, "drops": ["Wraith Essence"]},
+        {"name": "Phantom Lord", "stat_reward": {"Strength": 32, "Agility": 28, "Intelligence": 25}, "drops": ["Lord’s Shard"]},
+    ],
+    44: [
+        {"name": "Dragon Knight", "stat_reward": {"Strength": 36, "Agility": 20, "Intelligence": 20}, "drops": ["Dragon Knight Sword"]},
+        {"name": "Dragon Mage", "stat_reward": {"Strength": 33, "Agility": 18, "Intelligence": 28}, "drops": ["Dragon Mage Staff"]},
+    ],
+    45: [
+        {"name": "Titan Lord", "stat_reward": {"Strength": 40, "Agility": 15, "Intelligence": 15}, "drops": ["Titan Lord Core"]},
+        {"name": "Titan Mage", "stat_reward": {"Strength": 35, "Agility": 15, "Intelligence": 25}, "drops": ["Titan Mage Orb"]},
+    ],
+    46: [
+        {"name": "Ancient Wyrm", "stat_reward": {"Strength": 38, "Agility": 22, "Intelligence": 22}, "drops": ["Wyrm Scale"]},
+        {"name": "Ancient Wyrm Mage", "stat_reward": {"Strength": 35, "Agility": 20, "Intelligence": 30}, "drops": ["Wyrm Heart"]},
+    ],
+    47: [
+        {"name": "Ethereal Phantom", "stat_reward": {"Strength": 34, "Agility": 28, "Intelligence": 28}, "drops": ["Phantom Essence"]},
+        {"name": "Ethereal Lord", "stat_reward": {"Strength": 37, "Agility": 30, "Intelligence": 32}, "drops": ["Lord’s Essence"]},
+    ],
+    48: [
+        {"name": "Dread Dragon", "stat_reward": {"Strength": 45, "Agility": 25, "Intelligence": 25}, "drops": ["Dread Dragon Scale"]},
+        {"name": "Dread Dragon Mage", "stat_reward": {"Strength": 40, "Agility": 22, "Intelligence": 35}, "drops": ["Dread Dragon Heart"]},
+    ],
+    49: [
+        {"name": "Shadow Titan", "stat_reward": {"Strength": 42, "Agility": 28, "Intelligence": 30}, "drops": ["Shadow Titan Core"]},
+        {"name": "Shadow Titan Mage", "stat_reward": {"Strength": 38, "Agility": 25, "Intelligence": 35}, "drops": ["Shadow Titan Orb"]},
+    ],
+    50: [
+        {"name": "Final Boss", "stat_reward": {"Strength": 50, "Agility": 30, "Intelligence": 40}, "drops": ["Legendary Sword", "Legendary Armor"]},
+        {"name": "Final Boss Mage", "stat_reward": {"Strength": 40, "Agility": 30, "Intelligence": 50}, "drops": ["Legendary Staff", "Legendary Robes"]},
+    ],
 }
 
 BOSSES = {
