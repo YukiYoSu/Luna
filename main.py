@@ -562,7 +562,7 @@ class SAOMenuView(View):
             return embed
 
         elif self.current_page == 'stats':
-            embed = discord.Embed(title=f"Stats for {self.user_name}", color=0x00ffcc)
+            embed = discord.Embed(title=f"Stats for {self.user_id}", color=0x00ffcc)
             for stat, val in player['stats'].items():
                 embed.add_field(name=stat, value=str(val), inline=True)
             embed.add_field(name="Level", value=player.get("level", 1), inline=True)
